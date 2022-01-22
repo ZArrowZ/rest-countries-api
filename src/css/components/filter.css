@@ -1,0 +1,64 @@
+.filter {
+  max-width: 12.5rem;
+  margin: 2.5rem 0 2rem 0;
+  width: 100%;
+}
+@media (min-width: 54.0625em) {
+  .filter {
+    margin: 3rem 0;
+  }
+}
+.filter .default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  padding-left: 1.5rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  user-select: none;
+  cursor: pointer;
+}
+.filter .dropDown__icon {
+  font-size: 1.25rem;
+}
+.filter .options__container {
+  position: absolute;
+  border-radius: 0.3125rem;
+  width: 100%;
+  max-width: 12.5rem;
+  margin-top: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+}
+.filter .option {
+  user-select: none;
+  cursor: pointer;
+}
+.filter .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.filter .option span {
+  display: block;
+  padding: 0.1875rem 0;
+  margin-left: 1.5rem;
+}
+
+.lightMode .filter .default {
+  background-color: var(--light-elements);
+  color: var(--light-text);
+}
+.lightMode .filter .options__container {
+  background-color: var(--light-elements);
+  color: var(--light-text);
+}
+
+.darkMode .filter .default {
+  background-color: var(--dark-elements);
+  color: var(--light-elements);
+}
+.darkMode .filter .options__container {
+  background-color: var(--dark-elements);
+  color: var(--light-elements);
+}

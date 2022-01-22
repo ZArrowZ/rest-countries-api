@@ -1,0 +1,57 @@
+@use "../util/functions.scss" as *;
+@use "../util/variables.scss" as *;
+
+.header {
+  width: 100%;
+  height: rem(80);
+  box-shadow: $box-shadow;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+    max-width: rem(1440);
+    padding: $padding;
+  }
+  .logo {
+    cursor: pointer;
+    &__link {
+      text-decoration: none;
+    }
+    h1 {
+      font-size: clamp(rem(16), 1.8vw, rem(28));
+      font-weight: 800;
+    }
+  }
+
+  &__darkMode {
+    display: flex;
+    align-items: center;
+    gap: rem(7);
+    font-size: min(rem(16), 3.4vw);
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.lightMode {
+  .logo__link {
+    color: var(--light-text);
+  }
+  color: var(--light-text);
+  .header {
+    background-color: var(--light-elements);
+  }
+}
+.darkMode {
+  .logo__link {
+    color: var(--light-elements);
+  }
+  color: var(--light-elements);
+  .header {
+    background-color: var(--dark-elements);
+  }
+}

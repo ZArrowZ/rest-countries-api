@@ -1,0 +1,58 @@
+.countries-filter {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 5.556vw;
+}
+@media (min-width: 54.0625em) {
+  .countries-filter {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.search {
+  margin-top: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 54.0625em) {
+  .search {
+    margin: 3rem 0;
+  }
+}
+.search__icon {
+  position: absolute;
+  color: gray;
+  top: 50%;
+  font-size: 1.375rem;
+  left: 1.6875rem;
+  transform: translate(0, -50%);
+}
+.search__input {
+  width: 100%;
+  max-width: 30rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding-left: 4.375rem;
+}
+.search__input::placeholder {
+  font-size: min(1rem, 3.8vw);
+}
+
+.lightMode .search input {
+  color: var(--light-text);
+}
+
+.darkMode .search__icon {
+  color: var(--light-elements);
+}
+.darkMode .search input {
+  background-color: var(--dark-elements);
+  color: var(--light-elements);
+}
+.darkMode .search input::placeholder {
+  color: var(--light-elements);
+}

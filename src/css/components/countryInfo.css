@@ -1,0 +1,134 @@
+.country {
+  padding: 0 5.556vw;
+  max-width: 90rem;
+  margin: auto;
+}
+@media (min-width: 71.875em) {
+  .country {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+  }
+}
+.country button {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.country__linkBack {
+  text-decoration: none;
+}
+.country #backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 8.5rem;
+  margin: 2.25rem 0;
+}
+.country__backIcon {
+  font-size: 1.375rem;
+  margin-right: 0.4375rem;
+}
+.country__flag {
+  margin: 2.625rem 0;
+  margin-top: 4.0625rem;
+  max-height: 25rem;
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  justify-self: center;
+}
+@media (min-width: 71.875em) {
+  .country .country__details {
+    width: 50%;
+    position: relative;
+    top: 2.5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2.25rem;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "rt rt rt rt lf lf lf lf" "ft ft ft ft ft ft ft ft";
+  }
+}
+.country h1 {
+  margin: 2.125rem 0;
+  font-weight: 800;
+}
+@media (min-width: 71.875em) {
+  .country h1 {
+    position: relative;
+    top: 4rem;
+    grid-area: hd;
+  }
+}
+.country__headline {
+  margin: 1rem 0;
+}
+@media (min-width: 71.875em) {
+  .country__firstCol {
+    grid-area: rt;
+  }
+}
+.country__secCol {
+  margin: 3rem 0;
+}
+@media (min-width: 71.875em) {
+  .country__secCol {
+    grid-area: lf;
+    align-self: flex-start;
+    position: relative;
+    top: -2.5rem;
+  }
+}
+.country__thirdCol {
+  padding-bottom: 3rem;
+}
+@media (min-width: 71.875em) {
+  .country__thirdCol {
+    grid-area: ft;
+  }
+}
+.country__thirdCol .country__headline {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 71.875em) {
+  .country__thirdCol .country__headline {
+    flex-direction: row;
+  }
+}
+.country__borders__container {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (min-width: 71.875em) {
+  .country__borders__container {
+    padding: 0 1rem;
+  }
+}
+.country__border {
+  gap: 1rem;
+  min-width: 6rem;
+  font-size: 0.9375rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.darkMode {
+  color: var(--light-elements);
+}
+.darkMode button {
+  background-color: var(--dark-elements);
+  color: var(--light-elements);
+}
+
+.lightMode {
+  color: var(--light-text);
+}
+.lightMode button {
+  background-color: var(--light-elements);
+  color: var(--light-text);
+}
