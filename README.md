@@ -47,10 +47,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned
-
-that the first react project I learned a lot about react and hooks and react router
-
 ## Author
 
 - Frontend Mentor - [@ZArrowZ](https://www.frontendmentor.io/profile/ZArrowZ)
