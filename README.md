@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ZArrowZ/rest-countries-api)
-- Live Site URL: [Add live site URL here](https://confident-hermann-66bd3b.netlify.app/)
+- Solution URL: [here](https://github.com/ZArrowZ/rest-countries-api)
+- Live Site URL: [here](https://confident-hermann-66bd3b.netlify.app/)
 
 ## My process
 
